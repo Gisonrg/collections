@@ -1,0 +1,40 @@
+.search-main {
+  .filter-button {
+    color: #7FB127;
+  }
+
+  .search-popular {
+    text-align: center;
+    padding: 120px 90px 100px 90px;
+
+    .title {
+      color: #444444;
+      font-size: 18px;
+      font-weight: 500;
+      border-bottom: 1px solid #CCCCCC;
+      padding: 30px;
+    }
+
+    .entry-list {
+      font-size: 18px;
+      padding: 20px;
+
+      .entry-item {
+        color: #7FB127;
+        margin: 25px 0;
+      }
+    }
+
+    .button {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      background-color: #0D6488;
+    }
+
+
+  }
+
+
+}

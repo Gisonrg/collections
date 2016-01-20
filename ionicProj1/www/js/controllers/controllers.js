@@ -15,6 +15,9 @@ angular.module('myApp.controllers', [])
   .controller('SearchCtrl', function($scope) {
 
   })
+  .controller('SearchResultCtrl', function($scope) {
+
+  })
   .controller('CourseCtrl', function($scope) {
 
   })

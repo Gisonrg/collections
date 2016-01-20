@@ -39,14 +39,23 @@ angular.module('myApp', ['ionic', 'myApp.controllers'])
     })
 
     .state('app.search', {
-      url: '/search',
-      views: {
-        'tab-search': {
-          templateUrl: 'templates/views/search.html',
-          controller: 'SearchCtrl'
+        url: '/search',
+        views: {
+          'tab-search': {
+            templateUrl: 'templates/views/search.html',
+            controller: 'SearchCtrl'
+          }
         }
-      }
-    })
+      })
+      .state('app.result', {
+        url: '/result',
+        views: {
+          'tab-search': {
+            templateUrl: 'templates/views/searchResult.html',
+            controller: 'SearchResultCtrl'
+          }
+        }
+      })
 
     .state('app.course', {
       url: '/course',

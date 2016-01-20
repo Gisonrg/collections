@@ -3,7 +3,14 @@ angular.module('myApp.controllers', [])
 
   })
   .controller('HomeCtrl', function($scope) {
-
+    // slider options
+    $scope.options = {
+      loop: true
+    };
+    $scope.data = {};
+    $scope.$watch('data.slider', function(nv, ov) {
+      $scope.slider = $scope.data.slider;
+    });
   })
   .controller('SearchCtrl', function($scope) {
 

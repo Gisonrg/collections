@@ -25,3 +25,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
  * Default styles *
  ******************/
 @import 'default.scss';
+
+
+// Views
+@import 'views/home/main.scss';

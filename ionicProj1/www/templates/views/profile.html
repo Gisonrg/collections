@@ -1,5 +1,99 @@
-<ion-view view-title="Profile">
-  <ion-content class="padding">
+<ion-view class="profile-main" view-title="Profile">
+  <div class="bar bar-header bar-stable" ng-if="!isLogin">
+    <h1 class="title">Profile</h1>
+    <a class="button button-icon icon ion-ios-gear setting-button"></a>
+  </div>
+  <ion-content>
+    <div class="content-wrapper">
+      <div ng-if="!isLogin" class="need-login">
+        <img src="img/course/course-list.png" alt="" />
+        <div class="">
+          <h4>Track your progress</h4>
+          <p>
+            Sign in to watch your energy points and badges accumulate!
+          </p>
+        </div>
+        <button class="button button-login" name="button">Sign in</button>
+      </div>
 
+      <div class="bar bar-header bar-transparent" ng-if="isLogin">
+        <h1 class="title"></h1>
+        <a class="button button-icon icon ion-ios-gear setting-button"></a>
+      </div>
+      <div ng-if="isLogin" class="user-profile">
+        <div class="profile-header">
+          <img class="avatar" src="img/home/bear.png" alt="" />
+          <div class="username">
+            Mikeway
+          </div>
+          <div class="comment">
+            @
+          </div>
+        </div>
+
+        <div class="section-col-1 padding">
+          <div class="header">
+            You have
+          </div>
+          <div class="banner-large">
+            <div class="hours">
+              36
+            </div>
+            <div class="button-more">
+              More
+            </div>
+          </div>
+        </div>
+
+        <div class="banner">
+          <ion-slides class="badge-container" options="options" slider="data.slider">
+            <ion-slide-page>
+              <div class="row">
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+                <div class="col col-3 badge-item">
+                  <img src="img/profile/badge.png" alt="" />
+                  <div class="title">
+                    Math
+                  </div>
+                </div>
+              </div>
+            </ion-slide-page>
+
+          </ion-slides>
+        </div>
+      </div>
+
+    </div>
   </ion-content>
 </ion-view>

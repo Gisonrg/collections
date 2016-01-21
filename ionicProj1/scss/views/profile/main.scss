@@ -1,0 +1,109 @@
+.profile-main {
+  .content-wrapper {
+    .need-login {
+      padding: 150px 20px;
+      text-align: center;
+      img {
+        width: 300px;
+      }
+
+      .button-login {
+        width: 200px;
+        color: white;
+        background-color: $themeColor-main;
+      }
+    }
+
+    .bar-transparent {
+      background: transparent;
+    }
+
+    .user-profile {
+      .profile-header {
+        padding-top: 48px;
+        text-align: center;
+        height: 180px;
+        background-image: url('../img/profile/background.png');
+
+        .avatar {
+          width: 60px;
+          height: 60px;
+        }
+
+        .username {
+          margin-top: 5px;
+          color: white;
+          font-size: 22px;
+        }
+
+        .comment {
+          margin-top: 5px;
+          color: white;
+          font-size: 12px;
+        }
+      }
+
+      .section-col-1 {
+        margin-top: 20px;
+        overflow: hidden;
+        height: 180px;
+
+        .header {
+          padding: 5px 0px;
+          margin-bottom: 5px;
+          border-bottom: 1px solid #CCCCCC;
+        }
+
+        .banner-large {
+          padding: 15px;
+          border-radius: 5px;
+          height: 120px;
+          text-align: center;
+          border-bottom: 1px solid #CCCCCC;
+          border-radius: 0px;
+          .hours {
+            margin: 10px;
+            color: #1182BB;
+            font-size: 56px;
+          }
+
+          .button-more {
+            background-color: #878787;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            margin: 30px auto 0;
+          }
+        }
+      }
+
+      .banner {
+        height: 250px;
+        border-bottom: 1px solid #CCCCCC;
+        .badge-container {
+          .row {
+            height: 120px;
+
+            .badge-item {
+              text-align: center;
+
+              img {
+                height: 60px;
+              }
+              .title {
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .address-list {
+        
+      }
+    }
+  }
+}

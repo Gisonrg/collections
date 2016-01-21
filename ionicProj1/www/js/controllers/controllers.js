@@ -22,5 +22,5 @@ angular.module('myApp.controllers', [])
 
   })
   .controller('ProfileCtrl', function($scope) {
-
+    $scope.isLogin = true;
   });

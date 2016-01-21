@@ -1,0 +1,9 @@
+$themeColor-main : #69D00C;
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+  color: $themeColor-main;
+}
+
+.bar-stable {
+  border-bottom: 1px solid #111111;
+}

@@ -1,0 +1,15 @@
+.course-main {
+  .content-wrapper {
+    padding: 150px 20px;
+    text-align: center;
+    img {
+      width: 300px;
+    }
+
+    .button-search {
+      width: 200px;
+      color: white;
+      background-color: $themeColor-main;
+    }
+  }
+}

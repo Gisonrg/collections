@@ -2,7 +2,7 @@ angular.module('myApp.controllers', [])
   .controller('AppCtrl', function($scope) {
 
   })
-  .controller('HomeCtrl', function($scope) {
+  .controller('HomeCtrl', function($scope, $state) {
     // slider options
     $scope.options = {
       loop: true
@@ -11,6 +11,12 @@ angular.module('myApp.controllers', [])
     $scope.$watch('data.slider', function(nv, ov) {
       $scope.slider = $scope.data.slider;
     });
+  })
+  .controller('CourseListCtrl', function($scope) {
+
+  })
+  .controller('CourseDetailCtrl', function($scope) {
+
   })
   .controller('SearchCtrl', function($scope) {
 

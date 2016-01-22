@@ -1,0 +1,56 @@
+.course-list-main {
+  .bar-transparent {
+    background: transparent;
+
+    a {
+      color: white;
+    }
+  }
+
+  .course-list-header {
+    height: 180px;
+    background-image: url('../img/profile/background.png');
+
+    .title {
+      padding: 0 10px;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      bottom: 0px;
+      top: 140px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .course-list-filter {
+    padding: 10px;
+  }
+
+  .course-list-container {
+    .detail-item {
+      font-size: 0.7em;
+      .logo {
+        float: left;
+        width: 5%;
+      }
+      .title {
+        float: left;
+        min-width: 33%;
+      }
+      .content {
+        float: left;
+
+        li {
+          text-decoration: none;
+          list-style: none;
+        }
+      }
+
+      &:after {
+        content:'';
+        display:block;
+        clear: both;
+      }
+    }
+  }
+}

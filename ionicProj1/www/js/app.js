@@ -51,21 +51,30 @@ angular.module('myApp', ['ionic', 'myApp.controllers'])
         url: '/result',
         views: {
           'tab-search': {
-            templateUrl: 'templates/views/searchResult.html',
+            templateUrl: 'templates/views/result.html',
             controller: 'SearchResultCtrl'
           }
         }
       })
 
     .state('app.course', {
-      url: '/course',
-      views: {
-        'tab-course': {
-          templateUrl: 'templates/views/course.html',
-          controller: 'CourseCtrl'
+        url: '/course',
+        views: {
+          'tab-course': {
+            templateUrl: 'templates/views/course.html',
+            controller: 'CourseCtrl'
+          }
         }
-      }
-    })
+      })
+      .state('app.detail', {
+        url: '/detail',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/views/detail.html',
+            controller: 'CourseDetailCtrl'
+          }
+        }
+      })
 
     .state('app.profile', {
       url: '/profile',
@@ -73,6 +82,16 @@ angular.module('myApp', ['ionic', 'myApp.controllers'])
         'tab-profile': {
           templateUrl: 'templates/views/profile.html',
           controller: 'ProfileCtrl'
+        }
+      }
+    })
+
+    .state('app.list', {
+      url: '/list',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/views/list.html',
+          controller: 'CourseListCtrl'
         }
       }
     });

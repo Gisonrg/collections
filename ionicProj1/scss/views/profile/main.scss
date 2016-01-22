@@ -58,13 +58,31 @@
           padding: 15px;
           border-radius: 5px;
           height: 120px;
-          text-align: center;
+          // text-align: center;
           border-bottom: 1px solid #CCCCCC;
           border-radius: 0px;
-          .hours {
-            margin: 10px;
-            color: #1182BB;
-            font-size: 56px;
+
+          .hours-container {
+            padding: 10px;
+
+            .hours {
+              text-align: center;
+              position: relative;
+              top: 50%;
+              left: 50%;
+
+              display: inline-block;
+              color: #1182BB;
+              font-size: 56px;
+              width: 70px;
+              margin-left: -35px;
+            }
+            .hours-title {
+              top: 50%;
+              left: 50%;
+              position: relative;
+              display: inline-block;
+            }
           }
 
           .button-more {
@@ -75,7 +93,7 @@
             color: white;
             text-align: center;
             border-radius: 15px;
-            margin: 30px auto 0;
+            margin: 0px auto;
           }
         }
       }
@@ -102,7 +120,143 @@
       }
 
       .address-list {
-        
+        .header {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .address-item {
+          display: flex;
+          flex-flow: row;
+          height: 48px;
+          border: 1px solid #CCCCCC;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .address-item-icon {
+            flex: 0.1;
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            img {
+              height: 24px;
+            }
+          }
+          .address-item-content {
+            flex: 0.8;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            display: flex;
+            align-items: center;
+          }
+          .address-item-button {
+            flex: 0.1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+          }
+        }
+      }
+
+      .payment-list {
+        .header {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .payment-item {
+          display: flex;
+          flex-flow: row;
+          height: 48px;
+          border: 1px solid #CCCCCC;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .payment-item-icon {
+            flex: 0.1;
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            .icon {
+              font-size: 20px;
+            }
+          }
+          .payment-item-content {
+            flex: 0.7;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            display: flex;
+            align-items: center;
+          }
+          .payment-item-button {
+            flex: 0.2;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+          }
+        }
+      }
+
+
+      .voucher-list {
+        .header {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .empty-item {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+
+      .contact-list {
+        .header {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .contact-item {
+          display: flex;
+          flex-flow: row;
+          height: 48px;
+          border: 1px solid #CCCCCC;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .contact-item-icon {
+            flex: 0.1;
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            .icon {
+              font-size: 20px;
+            }
+          }
+          .contact-item-content {
+            flex: 0.7;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            display: flex;
+            align-items: center;
+          }
+          .contact-item-button {
+            flex: 0.2;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+          }
+        }
       }
     }
   }

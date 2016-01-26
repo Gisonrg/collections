@@ -1,7 +1,105 @@
-<ion-view view-title="Explore">
-  <ion-nav-bar class="bar-stable">
-  </ion-nav-bar>
+<ion-view class="course-detail-main">
   <ion-content>
-    hello world
+    <div class="bar bar-header bar-transparent">
+      <a class="button button-icon icon ion-ios-arrow-back" ui-sref="app.list"></a>
+      <h1 class="title"></h1>
+    </div>
+    <div class="course-detail-header">
+      <img src="img/courselist/head.jpg" alt="" />
+      <div class="title">
+        Michael Cofowman
+      </div>
+      <div class="personal-page-wrapper">
+        <a href="#" class="personal-page">Personal Page</a>
+      </div>
+    </div>
+    <div class="course-detail-content">
+      <div class="section">
+        <div class="title">
+          Math Basic - Level 1
+        </div>
+        <div class="row course-content">
+          <div class="col "><img class="avatar" src="img/course/book.png" alt="" /></div>
+          <div class="col col-90 content">Vectors and spaces</div>
+        </div>
+        <div class="row course-content">
+          <div class="col "><img class="avatar" src="img/course/book.png" alt="" /></div>
+          <div class="col col-90 content">Matrix transformations</div>
+        </div>
+        <div class="row course-content">
+          <div class="col "><img class="avatar" src="img/course/book.png" alt="" /></div>
+          <div class="col col-90 content">Alternate coordinate systems (bases)</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title">
+          Time
+        </div>
+        <div class="content">
+            <calendar selected="day"></calendar>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="title">
+          上课方式
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col col-50">
+              <div class="teach-container">
+                <span class="title">
+                  一对一
+                </span>
+              </div>
+            </div>
+            <div class="col col-50">
+              <div class="teach-container">
+                  <img src="img/course/class.png" alt="" />
+                <span class="title">
+                  班课
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row course-content">
+            <div class="col col-50">
+              <div class="teach-container">
+                <img src="img/course/video.png" alt="" />
+              <span class="title">
+                视频课程
+              </span>
+            </div></div>
+            <div class="col col-50">
+              <div class="teach-container">
+                <img src="img/course/videocourse.png" alt="" />
+              <span class="title">
+                直播课程
+              </span>
+            </div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="content">
+          课时费用: SGD2000+
+        </div>
+      </div>
+      <div class="section">
+        <div class="content">
+          上课地点: 94 Woodland Ave.2, 455715
+        </div>
+      </div>
+
+      <button class="button button-block button-confirm">
+    确认购买
+  </button>
+    </div>
+
+
   </ion-content>
 </ion-view>

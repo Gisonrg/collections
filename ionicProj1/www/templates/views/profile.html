@@ -1,7 +1,7 @@
-<ion-view class="profile-main" view-title="Profile">
+<ion-view class="profile-main">
   <div class="bar bar-header bar-stable" ng-if="!isLogin">
     <h1 class="title">Profile</h1>
-    <a class="button button-icon icon ion-ios-gear setting-button"></a>
+    <a class="button button-icon icon ion-ios-gear setting-button" nav-transition="none" ui-sref="app.setting"></a>
   </div>
   <ion-content>
     <div class="content-wrapper">
@@ -18,7 +18,7 @@
 
       <div class="bar bar-header bar-transparent" ng-if="isLogin">
         <h1 class="title"></h1>
-        <a class="button button-icon icon ion-ios-gear setting-button"></a>
+        <a class="button button-icon icon ion-ios-gear setting-button" ui-sref="app.setting"></a>
       </div>
       <div ng-if="isLogin" class="user-profile">
         <div class="profile-header">

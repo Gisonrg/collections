@@ -103,6 +103,15 @@ angular.module('myApp', ['ionic', 'myApp.controllers', 'myApp.directive'])
             controller: 'CourseConfirmCtrl'
           }
         }
+      })
+      .state('app.setting', {
+        url: '/setting',
+        views: {
+          'tab-profile': {
+            templateUrl: 'templates/views/setting.html',
+            controller: 'SettingCtrl'
+          }
+        }
       });
 
     // if none of the above states are matched, use this as the fallback

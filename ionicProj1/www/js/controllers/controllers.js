@@ -30,6 +30,15 @@ angular.module('myApp.controllers', [])
   .controller('CourseConfirmCtrl', function($scope) {
 
   })
+  .controller('SettingCtrl', function($scope, $state, $ionicHistory) {
+    $scope.goToProfile = function() {
+      $ionicHistory.nextViewOptions({
+        disableAnimate: true,
+        disableBack: true
+      });
+      $state.go('app.profile');
+    };
+  })
   .controller('ProfileCtrl', function($scope) {
     $scope.isLogin = true;
   });

@@ -87,14 +87,23 @@ angular.module('myApp', ['ionic', 'myApp.controllers', 'myApp.directive'])
     })
 
     .state('app.list', {
-      url: '/list',
-      views: {
-        'tab-home': {
-          templateUrl: 'templates/views/list.html',
-          controller: 'CourseListCtrl'
+        url: '/list',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/views/list.html',
+            controller: 'CourseListCtrl'
+          }
         }
-      }
-    });
+      })
+      .state('app.confirm', {
+        url: '/confirm',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/views/confirmation.html',
+            controller: 'CourseConfirmCtrl'
+          }
+        }
+      });
 
     // if none of the above states are matched, use this as the fallback
     var defaultRoute = '/app/home';

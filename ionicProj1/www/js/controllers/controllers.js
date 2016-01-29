@@ -27,6 +27,9 @@ angular.module('myApp.controllers', [])
   .controller('CourseCtrl', function($scope) {
 
   })
+  .controller('CourseConfirmCtrl', function($scope) {
+
+  })
   .controller('ProfileCtrl', function($scope) {
     $scope.isLogin = true;
   });

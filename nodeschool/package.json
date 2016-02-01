@@ -1,0 +1,10 @@
+{
+  "name": "nodeschool",
+  "version": "1.0.0",
+  "description": "My solution towards nodeschool.io",
+  "author": "Jiang Sheng",
+  "license": "MIT",
+  "dependencies": {
+    "q": "^1.4.1"
+  }
+}

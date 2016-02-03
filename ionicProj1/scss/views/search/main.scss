@@ -1,3 +1,6 @@
+.apply-button {
+  color: $themeColor-main!important;
+}
 .search-main {
   .filter-button {
     color: $themeColor-main!important;
@@ -33,4 +36,8 @@
       background-color: #0D6488;
     }
   }
+}
+
+.checkbox-search  {
+  @include checkbox-style($themeColor-main, $themeColor-main, $themeColor-main);
 }
